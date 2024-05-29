@@ -1,0 +1,24 @@
+
+
+p{
+    font-family: cursive;
+    font-size: 18px;
+
+}
+#lorem{
+    font-weight: 100;
+    
+}
+#lo{
+   background-color: antiquewhite;
+    width: 100%;
+   text-align: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#division1{
+    text-decoration: line-through;
+}
