@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #t{
+      background-color: black;
+      width: 150px;
+      height: 3px;
+      transform: rotate(0deg);  
+        margin-top: 300px;
+        animation: rot 0.1s Linear 1s infinite normal;
+    }
+    @keyframes rot{
+        0%{
+            transform: rotate(0deg);
+        }
+        25%{
+            transform: rotate(45deg);
+        }
+        50%{
+            transform: rotate(90deg);
+        }
+        75%{
+            transform: rotate(135deg);
+        }
+        100%{
+            transform: rotate(180deg);
+        }
+    }
+    .loader { 
+        margin-top: 100px;
+        width: 20px;
+        height: 48px;
+        border-radius: 50%;
+        display: block;
+        margin:15px auto;
+        position: relative;
+        box-sizing: border-box;
+        animation: rotation 1s linear infinite;
+      }
+      .loader::after,
+      .loader::before {
+        content: '';  
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: #FF3D00;
+        width: 16px;
+        height: 16px;
+        transform: translate(-50%, 50%);
+        border-radius: 50%;
+      }
+      .loader::before {
+        left: auto;
+        right: 0;
+        background: #FFF;
+        transform: translate(50%, 100%);
+      }
+    
+    @keyframes rotation {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    } 
+</style>
+<body>
+    
+    <center>
+        <div id="t">
+        
+        </div>
+    </center>
+    <!-- <span class="loader" ></span> -->
+</body>
+</html>
