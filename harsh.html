@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>TABLE</h1>
+    <input type="text" id="data">
+    <button onclick="table()">click</button>
+    <p id="result"></p>
+
+<script>
+        function table(){
+        let tex = "";  
+        var a = document.getElementById("data").value;
+         for(var i=1; i<=10; i++){
+            var b = a * i;
+            tex = tex + a +"x"+ i +"="+ b +"<br>";
+        }
+        document.getElementById("result").innerHTML= tex; 
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+</style>
+<script>
+    function al(){
+        var num_s = document.getElementById("names").value;
+       var num_n = +num_s;
+       var tab="";
+
+       for(let i=1; i<=10; i++){
+        
+        tab = tab + num_n+"X"+i+"="+num_n*i+"<br>";
+
+       
+
+       }
+document.getElementById("table_data").innerHTML = tab;
+
+    }
+</script>
+<body>
+    <input type="text" name="name" id="names" placeholder="Enter a number">
+    <input type="submit" onclick="al();">
+<br><br>
+    <div id="table_data" style="height: 200px; width:100px;"></div>
+</body>
+</html>
+
+
