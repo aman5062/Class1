@@ -1,0 +1,20 @@
+#elements{
+    background-color: gray;
+    height: 500px;
+    width: 50%;
+}
+#deleted{
+    background-color: red;
+    height: 500px;
+    width: 50%;
+}
+.container{
+    display: flex;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    margin: 5px;
+    padding: 2px;
+}
