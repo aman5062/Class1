@@ -4,12 +4,34 @@ var person = {
     "class name" : "B.tech",
     "active" : true
 }
+var emp1 = {
+    "name" : "harsh",
+    "age" : 21,
+    "salary" : 25000
+}
+var emp2 = {
+    "name" : "nikhil",
+    "age" : 21,
+    "salary" : 22000
+}
+var emp3 = {
+    "name" : "shashank",
+    "age" : 21,
+    "salary" : 23000,
+    "manages" : {
+        "name1" : "aman",
+        "name2" : "manglam",
+        "jobs" : {
+            "name" : "raj"
+        }
+    }
+}
 
 
-//  braket Notation
-console.log(person["class name"]);
 
+var name = "raj";
+var salery = 15000;
 
-// // Dot Notation
-// console.log(person.class name);
+console.log(emp3.manages.jobs.name);
+
 
