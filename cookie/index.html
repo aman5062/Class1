@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var len = document.cookie.split(";").length;
+  //  for(i=0; i<len; i++){
+   //     for(j=0;j<2; j++){
+   //         if(document.cookie.split(";")[i].split("=")[j]==="user"){
+   //             if(document.cookie.split(";")[i].split("=")[j+1]==="active"){
+   //                alert("mil gaya");
+    //            }
+   //         }
+   //     }
+   // }
+ isfound = false;
+
+
+// cookie searching algo
+
+    for(i=0; i<len; i++){
+        for(j=0;j<2; j++){
+            if(!isfound){
+            if(document.cookie.split(";")[i].split("=")[j]===" name"){
+               var name = document.cookie.split(";")[i].split("=")[j+1];
+               document.write("Welcome "+name);
+               isfound = true;
+            }
+        }
+        }
+    }
+
+
+
+
+
+
+
+
+    if(!isfound){
+        alert("Not found");
+    }
+    else{
+       console.log("Found");
+    }
+
+</script>
+</html>
